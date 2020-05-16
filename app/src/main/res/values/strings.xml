@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android UI</string>
+    <string name="google_fonts_provider_authority">com.google.android.gms.fonts</string>
+    <string name="google_fonts_provider_package">com.google.android.gms</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

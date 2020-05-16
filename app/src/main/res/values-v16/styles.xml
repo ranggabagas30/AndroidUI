@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item> <!--define theme text view style -->
+    </style>
+
+    <style name="AppTheme.Widget.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/anton</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance1" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:fontFamily">@font/aclonica</item>
+    </style>
+</resources>

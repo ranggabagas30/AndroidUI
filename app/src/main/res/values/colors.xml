@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#9fa8da</color>
+    <color name="colorPrimaryLightDark">#6f79a8</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorPrimaryDark">#001970</color>
+    <color name="colorAccent">#9e048f</color>
+    <color name="colorSecondary">@color/colorAccent</color>
+    <color name="colorBackground">@android:color/white</color>
+    <color name="colorSurface">@android:color/white</color>
+    <color name="colorError">#910C0C</color>
+    <color name="colorOnPrimary">@android:color/white</color>
+    <color name="colorOnSecondary">@android:color/white</color>
+    <color name="colorOnBackground">@android:color/black</color>
+    <color name="colorOnSurface">@android:color/black</color>
+    <color name="colorOnError">@android:color/white</color>
+    <color name="colorControlNormal">#ADADAD</color>
+    <color name="colorControlActivated">@color/colorPrimary</color>
+    <color name="colorOpaque87percent">#DEE64E4E</color>
+    <color name="colorBottomNavMenuActive">@color/colorPrimaryLightDark</color>
+    <color name="colorBottomNavMenuInactive">@color/colorOnPrimary</color>
+    <color name="colorTabSelectedText">@color/colorOnPrimary</color>
+    <color name="colorTabText">@color/colorPrimary</color>
+
+    <color name="colorBackgroundTypography">@android:color/black</color>
+    <color name="colorTextTypography">#ADADAD</color>
+    <color name="colorTopLineTypography">#C21313</color>
+    <color name="colorBottomLineTypography">@color/colorTopLineTypography</color>
+    <color name="colorAscentTypography">@color/colorAccent</color>
+    <color name="colorDescentTypography">@color/colorAccent</color>
+    <color name="colorBaselineTypography">#4CAF50</color>
+</resources>

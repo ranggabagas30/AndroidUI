@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="To Activity No ActionBar" />
+
+            <TextView
+                android:id="@+id/tv.button.elevation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/button"
+                android:text="Button Elevation"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintTop_toBottomOf="@id/tv.button.elevation"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="button1"
+                android:elevation="12sp"/>
+
+            <SeekBar
+                android:id="@+id/elevation_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button1" />
+
+            <TextView
+                android:id="@+id/tv.opaque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Opaque 87%"
+                android:textSize="20sp"
+                android:textColor="@color/colorOpaque87percent"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@id/elevation_control"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Text Display1 Font Styles"
+                style="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv.opaque" />
+
+            <TextView
+                android:id="@+id/tv.display1.custom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Text Display1 custom style"
+                style="@style/AppTheme.TextAppearance1"
+                app:layout_constraintTop_toBottomOf="@id/tv.display1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.font.runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Typeface set at runtime"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/tv.display1.custom"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.customfontfamily.normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="font family normal"
+                app:fontFamily="@font/custom_font_family"
+                app:layout_constraintTop_toBottomOf="@+id/tv.font.runtime"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.customfontfamily.italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="font family italic"
+                android:textFontWeight="200"
+                android:fontFamily="@font/custom_font_family"
+                app:layout_constraintTop_toBottomOf="@+id/tv.customfontfamily.normal"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.typeface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Typeface programmatically"
+                app:layout_constraintTop_toBottomOf="@+id/tv.customfontfamily.italic"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+        
+</androidx.constraintlayout.widget.ConstraintLayout>
