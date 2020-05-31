@@ -8,7 +8,7 @@ import com.example.androidui.R
 
 
 object Typography {
-    fun downloadFont(context: Context, query: String, callback: FontsContractCompat.FontRequestCallback, handler: Handler) {
+    fun downloadFontGooglePlayServicesProvider(context: Context, query: String, callback: FontsContractCompat.FontRequestCallback, handler: Handler) {
         val request = FontRequest(
             context.getString(R.string.google_fonts_provider_authority),
             context.getString(R.string.google_fonts_provider_package),

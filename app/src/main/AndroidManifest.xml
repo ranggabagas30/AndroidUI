@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".customview.circularindicator.CircularActivityIndicator">
+        <activity android:name=".SpansActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".customview.extendingviewgroup.CustomViewGroupActivity">
-        </activity>
-        <activity android:name=".customview.extendingview.CustomViewActivity"></activity>
+        <activity android:name=".customview.circularindicator.CircularActivityIndicator"></activity>
+        <activity android:name=".customview.extendingviewgroup.CustomViewGroupActivity"></activity>
+        <activity android:name=".customview.extendingview.CustomViewActivity" />
         <activity
             android:name=".PipActivity"
             android:resizeableActivity="true"
@@ -35,7 +35,8 @@
         <activity
             android:name=".ActivityNoActionBar"
             android:theme="@style/AppTheme.Light.NoActionBar" />
-        <activity android:name=".MainActivity" /> <!-- using preloaded fonts you can avoid the delay until the font is downloaded by the first attempt -->
+        <activity android:name=".MainActivity">
+        </activity> <!-- using preloaded fonts you can avoid the delay until the font is downloaded by the first attempt -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

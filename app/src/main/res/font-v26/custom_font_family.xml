@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <font
         app:fontStyle="normal"
-        app:font="@font/lobstertwo"
+        app:font="@font/roboto_regular"
         app:fontWeight="400" />
     <font
         app:fontStyle="italic"
-        app:font="@font/aclonica"
+        app:font="@font/roboto_black_italic"
         app:fontWeight="200" />
 </font-family>

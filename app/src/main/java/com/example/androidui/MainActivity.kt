@@ -1,5 +1,6 @@
 package com.example.androidui
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Build
@@ -44,14 +45,17 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        requestDownloadFont("Margarine")
-
+        requestDownloadFontFamily("Margarine")
         setFontProgrammatically()
     }
 
-    private fun requestDownloadFont(fontFamily: String) {
+    /**
+     * download font
+     *
+     * */
+    private fun requestDownloadFontFamily(fontFamily: String) {
         val query = QueryBuilder(fontFamily).build()
-        Typography.downloadFont(this, query, object : FontsContractCompat.FontRequestCallback() {
+        Typography.downloadFontGooglePlayServicesProvider(this, query, object : FontsContractCompat.FontRequestCallback() {
             override fun onTypefaceRetrieved(typeface: Typeface?) {
                 Log.d("success", "success download font ${typeface.toString()}")
                 tv_font_runtime.typeface = typeface
@@ -72,12 +76,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setFontProgrammatically() {
-        val typeface = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            resources.getFont(R.font.custom_font_family)
-        } else {
-            //Typeface.createFromAsset(assets, "fonts/cactus_love.ttf")
-            ResourcesCompat.getFont(this, R.font.aclonica)
-        }
+        val typeface = ResourcesCompat.getFont(this, R.font.cactus_love)
+        val typeface2 = ResourcesCompat.getFont(this, R.font.aclonica)
+        val typeface3 = ResourcesCompat.getFont(this, R.font.custom_font_family)
         tv_typeface.typeface = typeface
+        tv_typeface2.typeface = typeface2
+        tv_typeface3.typeface = typeface3
     }
 }

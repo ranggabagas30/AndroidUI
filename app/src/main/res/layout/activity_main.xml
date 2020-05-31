@@ -113,7 +113,7 @@
                 android:layout_margin="5dp"
                 android:text="font family italic"
                 android:textFontWeight="200"
-                android:fontFamily="@font/custom_font_family"
+                app:fontFamily="@font/custom_font_family"
                 app:layout_constraintTop_toBottomOf="@+id/tv.customfontfamily.normal"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -122,10 +122,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Typeface programmatically"
+                android:text="Typeface programmatically using font ttf"
                 app:layout_constraintTop_toBottomOf="@+id/tv.customfontfamily.italic"
                 app:layout_constraintStart_toStartOf="parent" />
 
+            <TextView
+                android:id="@+id/tv.typeface2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Typeface2 programmatically using font xml"
+                app:layout_constraintTop_toBottomOf="@+id/tv.typeface"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.typeface3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Typeface3 programmatically using font family xml"
+                app:layout_constraintTop_toBottomOf="@+id/tv.typeface2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv.typeface4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Typeface4 programmatically using font family xml style italic"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/tv.typeface3"
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
         
